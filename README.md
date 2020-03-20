@@ -17,14 +17,14 @@ Based on Logan Engstrom, Create a friendly GUI interface and camera style transf
 ![image](https://github.com/MC-SUN/fast_style_transfer/blob/master/output/preview_video2.png)
 ![image](https://github.com/MC-SUN/fast_style_transfer/blob/master/output/preview_video3.png)
 
-## Tips
-Some Chinese annotations added;
-Maybe have english grammar mistakes;
-It is my first github uploading;
+## Others:
+Some Chinese annotations added;  
+Maybe have english grammar mistakes;  
+It is my first github uploading;  
 # Attributions/Thanks
 ## Thanks a lot to Logan Engstrom.
 Based on Logan Engstrom,(https://github.com/lengstrom/fast-style-transfer)
 # License
 ## copyright notice is retained from Logan Engstrom:
-Copyright (c) 2016 Logan Engstrom. Contact me for commercial use (or rather any use that is not academic research) (email: engstrom at my university's domain dot edu). Free for research use, as long as proper attribution is given and this copyright notice is retained.
+Copyright (c) 2016 Logan Engstrom. Contact me for commercial use (or rather any use that is not academic research) (email: engstrom at my university's domain dot edu). Free for research use, as long as proper attribution is given and this copyright notice is retained.  
 Copyright (c) 2020 Sun Yangyang. Free for research use
