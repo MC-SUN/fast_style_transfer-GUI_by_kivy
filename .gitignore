@@ -131,3 +131,4 @@ dmypy.json
 /output/1.mp4
 /output/wreck.mp4
 /.idea
+.idea/workspace.xml
