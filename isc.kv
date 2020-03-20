@@ -1,0 +1,314 @@
+<Label>:
+    bold:True
+    color:0,255,154,1
+<Button>:
+    background_color:124,252,0,1
+    color:255,215,0,1
+<Bar1>:
+    select_style_camera:select_style_camera
+    select_style_image:select_style_image
+    status_camera:status_camera
+    doing_camera:doing_camera
+    canvas:
+        Color:
+            rgba:0,255,154,1
+        Rectangle:
+            pos:self.x+5,self.y+5
+            size:self.width-10, self.height-10
+    Button:
+        id:select_style_camera
+        text:"1.Select Style"
+        font_size:self.width/7
+        width:self.parent.width/5
+        height:self.parent.height*3/5
+        x:self.parent.width/20
+        y:self.parent.y+self.parent.height/5
+    Image:
+        id:select_style_image
+        source:"Assets/image/Snipaste157987527354359463image.jpg"
+        x:self.parent.width/4
+        y:self.parent.y+self.parent.height/5
+        width:self.parent.width/5
+        height:self.parent.height*3/5
+    Label:
+        id:status_camera
+        text:"Select a style and transfer with camera.\nyou can screen_shot by pressing \"S\",\nyou can back by pressing \"Q\",\nDefault storage dir:\n ../output/camera_screen/"
+        font_size:self.width/25
+        width:self.parent.width/2
+        height:self.parent.height*4/5
+        x:self.parent.width/2.65
+        y:self.parent.y+self.parent.height/5
+    Button:
+        id:doing_camera
+        text:"2.Camera"
+        font_size:self.width/5
+        width:self.parent.width/7
+        height:self.parent.height*3/5
+        x:self.parent.width/1.2
+        y:self.parent.y+self.parent.height/5
+        disabled:True
+<Bar2_left>:
+    select_content:select_content
+    select_style:select_style
+    status_content:status_content
+    status_style:status_style
+    content_image:content_image
+    style_image:style_image
+    canvas:
+        Color:
+            rgba:0,250,154,1
+        Rectangle:
+            pos:self.x+5,self.y+5
+            size: self.width-10, self.height-10
+    Button:
+        id:select_content
+        text:"Content"
+        font_size:self.width/7
+        width:self.parent.width/4
+        height:self.parent.height/6
+        x:self.parent.width/15
+        y:self.parent.y+self.parent.height*5/9
+    Image:
+        id:content_image
+        source:"Assets/image/Snipaste157987527354359463image.jpg"
+        width:self.parent.width/2
+        height:self.parent.height/3
+        x:self.parent.width/2
+        y:self.parent.y+self.parent.height*5/9
+    Button:
+        id:select_style
+        text:"Style"
+        font_size:self.width/7
+        width:self.parent.width/4
+        height:self.parent.height/6
+        x:self.parent.width/15
+        y:self.parent.y+self.parent.height/9
+    Image:
+        id:style_image
+        source:"Assets/image/Snipaste157987527354359463image.jpg"
+        width:self.parent.width/2
+        height:self.parent.height/3
+        x:self.parent.width/2
+        y:self.parent.y+self.parent.height/9
+    Label:
+        id:status_content
+        text:"Select a image or\n video to transfer"
+        font_size:self.width/6
+        width:self.parent.width/4
+        height:self.parent.height/6
+        x:self.parent.width/8
+        y:self.parent.y+self.parent.height*7/9
+    Label:
+        id:status_style
+        text:"Select a style"
+        font_size:self.width/6
+        width:self.parent.width/4
+        height:self.parent.height/6
+        x:self.parent.width/8
+        y:self.parent.y+self.parent.height*3/9
+<Bar2_right>:
+    Image:
+        source:"Assets/image/back.png"
+        x:self.parent.x
+        y:self.parent.y
+        size:self.parent.size
+
+<Bar3>:
+    select_storage_location:select_storage_location
+    status_location:status_location
+    doing_start:doing_start
+    status_start:status_start
+    canvas:
+        Color:
+            rgba:0,250,154,1
+        Rectangle:
+            pos:self.x+5,self.y+5
+            size: self.width-10, self.height-10
+    Button:
+        id:select_storage_location
+        text:"Select storage location"
+        font_size:self.width/12
+        width:self.parent.width/4
+        height:self.parent.height/2
+        x:self.parent.width/8
+        y:self.parent.height*3/7
+    Label:
+        id:status_location
+        text:"Please choose the storage location"
+        font_size:self.width/12
+        width:self.parent.width/4
+        height:self.parent.height/6
+        x:self.parent.width/8
+        y:self.parent.height/7
+    Button:
+        id:doing_start
+        text:"Start"
+        font_size:self.width/7
+        width:self.parent.width/4
+        height:self.parent.height/2
+        x:self.parent.width*5/8
+        y:self.parent.height*3/7
+        disabled:True
+    Label:
+        id:status_start
+        text:"Please select the required filed."
+        font_size:self.width/12
+        width:self.parent.width/4
+        height:self.parent.height/6
+        x:self.parent.width*5/8
+        y:self.parent.height/7
+
+
+<Bar>:
+    bar_top:bar1
+    bar_middle:bar2_left
+    bar_middle_r:bar2_right
+    bar_bottom:bar3
+    canvas:
+        Color:
+            rgba:255,250,255,1
+        Rectangle:
+            pos:self.pos
+            size: self.width, self.height
+    Bar1:
+        id:bar1
+        x:0
+        y:root.height*3/4
+        size:root.width,root.height/4
+    Bar2_left:
+        id:bar2_left
+        x:0
+        y:root.height/4
+        size:root.width/2,root.height/2
+    Bar2_right:
+        id:bar2_right
+        x:root.width/2
+        y:root.height/4
+        size:root.width/2,root.height/2
+    Bar3:
+        id:bar3
+        x:0
+        y:0
+        size:root.width,root.height/4
+
+<MainView>:
+    bar:bar
+    Bar:
+        id:bar
+        x:0
+        y:0
+<Style_Camera_Selection>:
+    file_chooser: fc
+    BoxLayout:
+        orientation: 'vertical'
+        BoxLayout:
+            size_hint_y: None
+            height: sp(52)
+            Button:
+                text: 'Back'
+                on_press:root.back()
+            Button:
+                text: 'Icon View'
+                on_press: fc.view_mode = 'icon'
+            Button:
+                text: 'List View'
+                on_press: fc.view_mode = 'list'
+        Label:
+            size_hint_y: None
+            height: sp(52)
+            text: fc.path
+        FileChooser:
+            id: fc
+            path: 'E:\python2\stitp-test\style'
+            rootpath: 'E:\python2\stitp-test\style'
+            filters: ['*.jpg']
+            on_submit: root.get_camera_style()
+            FileChooserIconLayout
+            FileChooserListLayout
+
+<ContentSelection>:
+    file_chooser: fc
+    BoxLayout:
+        orientation: 'vertical'
+        BoxLayout:
+            size_hint_y: None
+            height: sp(52)
+            Button:
+                text: 'Back'
+                on_press:root.back()
+            Button:
+                text: 'Icon View'
+                on_press: fc.view_mode = 'icon'
+            Button:
+                text: 'List View'
+                on_press: fc.view_mode = 'list'
+        Label:
+            size_hint_y: None
+            height: sp(52)
+            text: fc.path
+        FileChooser:
+            id: fc
+            path: 'E:\python2\stitp-test\image'
+            filters: ['*.jpg', '*.png','*.mp4']
+            on_submit: root.get_image_or_video()
+            FileChooserIconLayout
+            FileChooserListLayout
+
+<StyleSelection>:
+    file_chooser: fc
+    BoxLayout:
+        orientation: 'vertical'
+        BoxLayout:
+            size_hint_y: None
+            height: sp(52)
+            Button:
+                text: 'Back'
+                on_press:root.back()
+            Button:
+                text: 'Icon View'
+                on_press: fc.view_mode = 'icon'
+            Button:
+                text: 'List View'
+                on_press: fc.view_mode = 'list'
+        Label:
+            size_hint_y: None
+            height: sp(52)
+            text: fc.path
+        FileChooser:
+            id: fc
+            path: 'E:\python2\stitp-test\style'
+            rootpath:'E:\python2\stitp-test\style'
+            filters: ['*.jpg']
+            on_submit: root.get_image()
+            FileChooserIconLayout
+            FileChooserListLayout
+
+<LocationSelection>:
+    file_chooser: fc
+    BoxLayout:
+        orientation: 'vertical'
+        BoxLayout:
+            size_hint_y: None
+            height: sp(52)
+            Button:
+                text: 'Back'
+                on_press:root.back()
+            Button:
+                text: 'Icon View'
+                on_press: fc.view_mode = 'icon'
+            Button:
+                text: 'List View'
+                on_press: fc.view_mode = 'list'
+            Button:
+                text: 'Select'
+                background_color:255,0,0,1
+                on_press:root.get_location()
+        Label:
+            size_hint_y: None
+            height: sp(52)
+            text: fc.path
+        FileChooser:
+            id: fc
+            path: 'E:\python2\stitp-test\output'
+            FileChooserIconLayout
+            FileChooserListLayout
